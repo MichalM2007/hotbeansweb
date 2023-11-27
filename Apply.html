@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Hot Beans Web</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+
+    </head>
+
+    <nav
+    class="w3-panel w3-bottombar w3-border-black w3-win8-indigo">
+    <h3>Hot Beans Web</h3>
+  
+    <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-panel w3-round-large w3-black w3-hide-small w3-xlarge w3-hide-medium" style="width:10%">Home</a>
+    <a href="Jobs.html" class="w3-bar-item w3-button w3-mobile w3-panel w3-round-large w3-win8-indigo w3-hide-small w3-xlarge w3-hide-medium" style="width:10%">Jobs</a>
+    <a href="Apply.html" class="w3-bar-item w3-button w3-mobile w3-panel w3-round-large w3-win8-indigo w3-hide-small w3-xlarge w3-hide-medium" style="width:10%">Apply</a>
+    <a href="Webdevs.html" class="w3-bar-item w3-button w3-mobile w3-panel w3-round-large w3-win8-indigo w3-hide-small w3-xlarge w3-hide-medium" style="width:10%">Our Trainee web developers</a>
+    <a href="Links.html" class="w3-bar-item w3-button w3-mobile w3-panel w3-round-large w3-win8-indigo w3-hide-small w3-xlarge w3-hide-medium" style="width:10%">Links to online courses</a>
+    
+    <div class="w3-dropdown-click">
+  </nav>
+  <nav class="w3-dropdown-click w3-xxlarge w3-right">
+    <button onclick="myFunction()" class="w3-button w3-red w3-hide-large w3-hide-medium w3-round-large w3-win8-indigo fa fa-bars w3-jumbo"></button>
+    <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border w3-win8-indigo w3-hide-large w3-hide-medium" style="right:0">
+      <a href="index.html" class="w3-bar-item w3-button w3-dark-grey w3-hide-large w3-hide-medium w3-animate-top">Home</a>
+      <a href="Jobs.html" class="w3-bar-item w3-button w3-dark-grey w3-hide-large w3-hide-medium w3-animate-top">Jobs</a>
+      <a href="Apply.html" class="w3-bar-item w3-button w3-dark-grey w3-hide-large w3-hide-medium w3-animate-top">Apply</a>
+      <a href="Webdevs.html" class="w3-bar-item w3-button w3-dark-grey w3-hide-large w3-hide-medium w3-animate-top">Our Trainee web developers</a>
+      <a href="Links.html" class="w3-bar-item w3-button w3-dark-grey w3-hide-large w3-hide-medium w3-animate-top">Links to online courses</a>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("Demo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+     
+    <script>
+      function myFunction() {
+        var x = document.getElementById("Demo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else { 
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      </script>
+</nav>
+
+  <body>
+
+    <form class="w3-container w3-card-4 w3-light-grey">
+      <h2>Job Application Form</h2>
+      <hr>
+      <p></p>
+    
+      <p>
+      <label>First Name</label>
+      <input class="w3-input w3-border w3-round-large" name="first" type="text"></p>
+      <p>
+      <label>Last Name</label>
+      <input class="w3-input w3-border w3-round-large" name="last" type="text"></p>
+      <label>Gender</label>
+      <p>
+        <input class="w3-radio" type="radio" name="gender" value="male" checked>
+        <label>Male</label></p>
+        <p>
+        <input class="w3-radio" type="radio" name="gender" value="female">
+        <label>Female</label></p>
+        <label>Email</label>
+      <input class="w3-input w3-border w3-round-large" name="last" type="text"></p>
+      <label>Telephone Number</label>
+      <input class="w3-input w3-border w3-round-large" name="last" type="text"></p>
+      <label>Address</label>
+      <input class="w3-input w3-border w3-round-large" name="last" type="text"></p>
+      <p><button class="w3-button w3-grey w3-round">Submit</button></p>
+    </form>
+
+  
+  
+
+</body>
+
+
+</html>

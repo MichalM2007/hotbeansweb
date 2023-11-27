@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Hot Beans Web</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+
+    </head>
+
+  <nav
+  class="w3-panel w3-bottombar w3-border-black w3-win8-indigo">
+  <h4>Hot Beans Web</h4>
+
+    <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-panel w3-round-large w3-black w3-hide-small w3-xlarge w3-hide-medium" style="width:10%">Home</a>
+    <a href="Jobs.html" class="w3-bar-item w3-button w3-mobile w3-panel w3-round-large w3-win8-indigo w3-hide-small w3-xlarge w3-hide-medium" style="width:10%">Jobs</a>
+    <a href="Apply.html" class="w3-bar-item w3-button w3-mobile w3-panel w3-round-large w3-win8-indigo w3-hide-small w3-xlarge w3-hide-medium" style="width:10%">Apply</a>
+    <a href="Webdevs.html" class="w3-bar-item w3-button w3-mobile w3-panel w3-round-large w3-win8-indigo w3-hide-small w3-xlarge w3-hide-medium" style="width:10%">Our Trainee web developers</a>
+    <a href="Links.html" class="w3-bar-item w3-button w3-mobile w3-panel w3-round-large w3-win8-indigo w3-hide-small w3-xlarge w3-hide-medium" style="width:10%">Links to online courses</a>
+    
+    <div class="w3-dropdown-click">
+  </nav>
+  <nav class="w3-dropdown-click w3-xxlarge w3-right">
+    <button onclick="myFunction()" class="w3-button w3-win8-indigo w3-hide-large  w3-round-large w3-win8-indigo fa fa-bars w3-jumbo"></button>
+    <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border w3-win8-indigo w3-hide-large " style="right:0">
+      <a href="index.html" class="w3-bar-item w3-button w3-dark-grey w3-hide-large  w3-animate-top">Home</a>
+      <a href="Jobs.html" class="w3-bar-item w3-button w3-dark-grey w3-hide-large  w3-animate-top">Jobs</a>
+      <a href="Apply.html" class="w3-bar-item w3-button w3-dark-grey w3-hide-large  w3-animate-top">Apply</a>
+      <a href="Webdevs.html" class="w3-bar-item w3-button w3-dark-grey w3-hide-large  w3-animate-top">Our Trainee web developers</a>
+      <a href="Links.html" class="w3-bar-item w3-button w3-dark-grey w3-hide-large  w3-animate-top">Links to online courses</a>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("Demo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+     
+    <script>
+      function myFunction() {
+        var x = document.getElementById("Demo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else { 
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      </script>
+</nav>
+
+  <body>
+
+    <div class="w3-container w3-xlarge" style="text-shadow:1px 1px 0 #444"> 
+      <h2>Home Page</h2>
+      <p>Welcome!</p>
+      <hr>
+    </div>
+      
+      </style>
+      <body>
+      
+      <div class="w3-container">
+      </div>
+      
+      <div class="w3-content w3-display-container" style="max-width:800px">
+        <img class="mySlides w3-animate-right w3-round-large w3-card-4" src="photo1.jpg" style="width:60%">
+        <img class="mySlides w3-animate-right w3-round-large w3-card-4" src="photo2.jpg" style="width:60%">
+        <img class="mySlides w3-animate-right w3-round-large w3-card-4" src="photo3.jpg" style="width:60%">
+        <img class="mySlides w3-animate-right w3-round-large w3-card-4" src="photo4.jpg" style="width:60%">
+        <div class="w3-center w3-container w3-section w3-jumbo w3-text-win8-indigo w3-display-middle" style="width:100%">
+          <div class="w3-left w3-hover-text-gray" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="w3-right w3-hover-text-gray" onclick="plusDivs(1)">&#10095;</div>
+
+        </div>
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " w3-white";
+      }
+      </script>
+    
+    <img src="" alt="" style="width:100%">
+    
+    <div class="w3-cell-column">
+      <div class="w3-container w3-win8-indigo w3-cell w3-round-large">
+        <h1>About us</h1>
+        <p>
+         Welcome to Hot Beans Web, where innovation and creativity blend seamlessly with cutting-edge web development. At Hot Beans Web, we don’t just build websites; we craft digital experiences that leave a lasting impression. Our team of passionate developers is fueled by a love for code, a flair for design, and a commitment to delivering unparalleled online solutions.</p>
+
+
+
+<h3>Tailored Solutions:</h3>
+<p>No two projects are the same, and neither are our solutions. We pride ourselves on creating bespoke websites that cater to your unique needs and goals.</p>
+
+<h3>Creative Ingenuity:</h3>
+<p>Imagination knows no bounds at Hot Beans Web. Expect websites that not only meet industry standards but redefine them with a touch of creative ingenuity.</p>
+
+<h3>*Collaborative Partnership:</h3> 
+<p>Your vision, our expertise. We believe in forging collaborative partnerships with our clients, ensuring your voice is heard throughout the development journey.</p>
+
+<h3>Security First:</h3>
+<p>In the fast-paced digital landscape, security is paramount. Hot Beans Web employs the latest security measures to safeguard your digital presence.</p>
+
+<h3>Our Commitment:</h3>
+<p>Hot Beans Web is not just a web development agency; it’s a commitment to transforming your online presence into a compelling story. Whether you’re a startup looking to make a splash or an established business aiming to revitalize your web presence, we’re here to turn your ideas into digital masterpieces.</p>
+
+<p>Join us at Hot Beans Web, where innovation meets implementation, and let’s craft a web experience that’s as unique as you are. Your journey to a captivating online presence starts here.</p>
+
+      </div>
+<h2>Text generated using chat gpt</h2>
+<h2>Images generated using adobe firefly</h2>
+
+</body>
+
+
+</html>
